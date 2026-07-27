@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="stud.css">
+</head>
+<body>
+<div class="container">
+    <h2>STUDENT DASHBOARD</h2>
+    <form>
+        <input type="text" id="name" placeholder="Enter your name">
+        <input type="number" id="rollno" placeholder="Enter your roll number">
+        <input type="date" id="dob" placeholder="Enter your DOB (dd/mm/yyyy)">
+        <input type="text" id="branch" placeholder="Enter your branch">
+        <input type="tel" id="contact" placeholder="Enter your contact number">
+        <div class="button-group">
+            <button type="button" onclick="addStudent()">Add Student</button>
+            <button type="button" onclick="searchStudent()">Search Student</button>
+            <button type="button" onclick="displayStudents()">Display All Students</button>
+            <button type="button" onclick="filterBranch()">Filter by Branch</button>
+            <button type="button" onclick="deleteStudent()">Delete a Student</button>
+            <button type="button" onclick="countStudent()">Total number of Students</button>
+        </div>
+        <div id="output"></div>
+    </form>
+</div>
+<script src="stud.js"></script>
+</body>
+</html>         
