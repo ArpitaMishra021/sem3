@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="assignment1.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Quiz</h1>
+        <!-- Student Details -->
+        <div id="student-details">
+
+            <input type="text" id="student-name" placeholder="Enter Student Name">
+
+            <input type="text" id="student-class" placeholder="Enter Class">
+
+            <button id="start-btn">Start Quiz</button>
+        </div>
+        <div id="quiz" style="display: none;">
+
+            <h2 id="question">Question</h2>
+
+            <div id="options">
+
+                <label>
+                    <input type="radio" name="option" value="0">
+                    <span id="option0"></span>
+                </label>
+
+                <label>
+                    <input type="radio" name="option" value="1">
+                    <span id="option1"></span>
+                </label>
+
+                <label>
+                    <input type="radio" name="option" value="2">
+                    <span id="option2"></span>
+                </label>
+
+            </div>
+
+            <button id="next-btn">Next</button>
+
+            <p id="score"></p>
+
+        </div>
+
+    </div>
+
+    <script src="assignment1.js"></script>
+
+</body>
+</html>
